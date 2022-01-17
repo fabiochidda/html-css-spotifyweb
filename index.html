@@ -28,7 +28,7 @@
 
     <footer>
 
-        <div class="play-bar">
+        <div class="player-bar">
 
             <div class="current-song debug">
                 <div class="song-icon">
@@ -39,17 +39,47 @@
                     <p>Brano Nome</p>
                 </div>
                 <div class="favourite-button">
-                    <i class="far fa-heart"></i>
-                    <i class="far fa-folder"></i>
+                    <a href="#"><i class="far fa-heart"></i></a>
+                    <a href="#"><i class="far fa-folder"></i></a>
                 </div>
             </div>
 
-            <div class="play-buttons debug">
-                test
+            <div class="player-buttons debug">
+                <div class="upper-buttons">
+                    <ul class="buttons">
+                        <li><a href="#"><i class="fas fa-random"></i></a></li>
+                        <li><a href="#"><i class="fas fa-step-backward"></i></a></li>
+                        <li><a href="#"><i class="far fa-play-circle"></i></a></li>
+                        <li><a href="#"><i class="fas fa-step-forward"></i></a></li>
+                        <li><a href="#"><i class="fas fa-redo"></i></a></li>
+                    </ul>
+                </div>
+                <div class="song-timeline">
+                    <div class="current-time">
+                        <p>0:25</p>
+                        <div class="timeline">
+                            <div class="timeline-progress">
+                                <div class="timeline-circle"></div>
+                            </div>
+                        </div>
+                        <p>4:35</p>
+                    </div>
+                </div>
             </div>
 
-            <div class="media-buttons debug">
-                test
+            <div class="media debug">
+                <div class="media-buttons">
+                    <ul class="buttons"> 
+                        <li><a href="#"><i class="fas fa-list"></i></a></li>
+                        <li><a href="#"><i class="fas fa-desktop"></i></a></li>
+                        <li><a href="#"><i class="fas fa-volume-up"></i></a></li>
+                        <li>
+                            <div class="audio-bar">
+                                <div class="audio-progression"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
 
         </div>
