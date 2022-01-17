@@ -29,9 +29,59 @@ main {
     flex-grow: 1;
 }
 
+
+
+
+/* Footer */
+
 .play-bar {
     border: 2px dashed violet;
     background-color: #282828;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     height: 100px;
+}
+
+.debug {
+    border: 2px dashed salmon;
+}
+
+.current-song {
+    width: 250px;
+    display: flex;
+    align-items: center;
+}
+
+.song-icon img {
+    width: 60px;
+}
+
+.song-description {
+    font-size: 13px;
+    margin-left: 10px;
+}
+
+.song-description p:first-child {
+    font-weight: bold;
+    color: white;
+}
+
+.song-description p:last-child {
+    color: #7D7D7D;
+}
+
+.favourite-button {
+    flex-grow: 1;
+    justify-content: space-between;
+    text-align: right;
+}
+
+.favourite-button i {
+    font-size: 18px;
+    color: #878787;
+}
+
+.favourite-button i:first-child {
+    padding-right: 10px;
 }
