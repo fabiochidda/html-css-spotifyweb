@@ -38,6 +38,56 @@ a {
 }
 
 
+/* Sidebar */
+
+.sidebar-widget {
+    padding-bottom: 15px;
+}
+
+.sidebar-widget p {
+    color: #6B6B6B;
+}
+
+.sidebar-widget h3 {
+    color: white;
+}
+
+.logo {
+    height: 90px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.logo img {
+    width: 200px;
+}
+
+.widget-item {
+    display: flex;
+    align-items: center;
+    padding: 5px 15px;
+}
+
+.widget-item a {
+    padding-bottom: 10px;
+}
+
+.icon {
+    width: 30px;
+}
+
+.icon-text p {
+    color: #717171;
+    padding-left: 15px;
+}
+
+.icon-playlist i {
+    color: white;
+    font-size: 40px;
+}
+
+
 /* Footer */
 
 .player-bar {
@@ -109,7 +159,7 @@ a {
 
 .player-buttons li {
     color: #FFFFFF;
-    font-size: 26px;
+    font-size: 20px;
 }
 
 .player-buttons li:nth-child(3) {
