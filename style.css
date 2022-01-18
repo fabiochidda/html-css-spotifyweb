@@ -57,6 +57,7 @@ a {
     width: 250px;
     display: flex;
     align-items: center;
+    padding-left: 5px;
 }
 
 .song-icon img {
@@ -77,6 +78,10 @@ a {
     color: #7D7D7D;
 }
 
+.song-description p:last-child:hover {
+    text-decoration: underline #7D7D7D;
+}
+
 .favourite-button {
     flex-grow: 1;
     justify-content: space-between;
@@ -86,6 +91,10 @@ a {
 .favourite-button i {
     font-size: 16px;
     color: #878787;
+}
+
+.favourite-button i:hover {
+    color: rgb(200, 200, 200);
 }
 
 .favourite-button i:first-child {
@@ -106,6 +115,10 @@ a {
 .player-buttons li:nth-child(3) {
     font-size: 35px;
     margin: 0 15px;
+}
+
+.player-buttons li:nth-child(3):hover {
+    font-size: 40px;
 }
 
 .player-buttons .buttons {
@@ -133,7 +146,7 @@ a {
     width: 400px;
 }
 
-.song-timeline .timeline:hover *{
+.song-timeline .timeline:hover * {
     display: block;
 }
 
@@ -149,7 +162,7 @@ a {
     background-color: #9BC651;
 }
 
-.song-timeline .timeline-circle {
+.circle {
     position: absolute;
     top: 0;
     left: 95%;
@@ -165,9 +178,10 @@ a {
     display: flex;
     align-items: center;
     gap: 0 15px;
+    padding-right: 5px;
 }
 
-.media-buttons li a{
+.media-buttons li a {
     font-size: 16px;
     color: white;
 }
@@ -179,9 +193,19 @@ a {
     border-radius: 9999px;
 }
 
+.audio-bar:hover * {
+    display: block;
+}
+
+.audio-progression:hover {
+    background-color: #9BC651;
+}
+
 .audio-progression {
     height: 5px;
     width: 40%;
+    position: relative;
     border-radius: 9999px;
     background-color: #C1C1C1;
 }
+
