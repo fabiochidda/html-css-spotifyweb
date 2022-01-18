@@ -21,6 +21,8 @@ main {
     border: 2px dashed red;
     background-color: #000000;
     min-width: 250px;
+    display: flex;
+    flex-direction: column;
 }
 
 .main-container {
@@ -35,6 +37,7 @@ ul li {
 
 a {
     color: currentColor;
+    text-decoration: none;
 }
 
 
@@ -46,31 +49,46 @@ a {
 
 .sidebar-widget p {
     color: #6B6B6B;
+    font-weight: bold;
 }
 
 .sidebar-widget h3 {
+    font-size: 18px;
     color: white;
+    padding-bottom: 5px;
+}
+
+.widget-item * :hover{
+    color: rgb(200, 200, 200);
 }
 
 .logo {
     height: 90px;
     display: flex;
     align-items: center;
-    padding: 0 15px;
+    padding: 0 10px;
 }
 
 .logo img {
-    width: 200px;
+    width: 150px;
+}
+
+.widget-list {
+    padding: 10px;
 }
 
 .widget-item {
     display: flex;
     align-items: center;
-    padding: 5px 15px;
+    padding: 5px 0px;
 }
 
-.widget-item a {
+#second-widget .playlist-names {
     padding-bottom: 10px;
+}
+
+#second-widget li:nth-child(2) {
+    padding-bottom: 15px;
 }
 
 .icon {
@@ -83,8 +101,50 @@ a {
 }
 
 .icon-playlist i {
-    color: white;
+    color: #A3A3A3;
     font-size: 40px;
+}
+
+#third-widget {
+    display: flex;
+    flex-grow: 1;
+    align-items: flex-end;
+    padding: 0;
+}
+
+#third-widget .widget-item:nth-child(2) {
+    padding-top: 15px;
+}
+
+#third-widget .widget-list {
+    flex-grow: 1;
+}
+
+#third-widget .widget-item:nth-child(1) {
+    border-bottom: 2px solid white;
+}
+
+.install-app-button img {
+    color: #717171;
+    vertical-align: middle;
+    width: 20px;
+    margin-right: 10px;
+}
+
+.profile-picture {
+    height: 26px;
+    width: 26px;
+    border-radius: 50px;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.profile-picture img {
+    width: 26px;
+}
+
+.profile-name p {
+    color: white;
 }
 
 
