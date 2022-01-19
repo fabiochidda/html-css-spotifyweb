@@ -13,7 +13,6 @@ body {
 
 main {
     display: flex;
-    flex-wrap: wrap;
     height: 100vh;
 }
 
@@ -146,6 +145,53 @@ a {
 .profile-name p {
     color: white;
 }
+
+/* Main Container */
+
+
+
+.upgrade-bar {
+    height: 90px;
+    flex-basis: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 10px;
+    background-color: #080B12;
+    color: white;
+}
+
+.upgrade-button {
+    padding: 10px 30px;
+    border: 2px solid white;
+    border-radius: 9999px;
+}
+
+.upgrade-button:hover {
+    font-size: 24px;
+}
+
+.album-tags {
+    display: flex;
+    flex-basis: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0 25px;
+    padding: 10px 0;
+}
+
+.album-tags p {
+    color: #717171;
+}
+
+
+.album-container {
+    display: flex;
+    
+}
+
+
 
 
 /* Footer */
