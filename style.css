@@ -29,7 +29,7 @@ main {
     border: 2px dashed blue;
     background-color: #141922;
     flex-grow: 1;
-    overflow: scroll;
+    overflow-y: auto;
 }
 
 ul li {
@@ -94,7 +94,7 @@ a {
 }
 
 #second-widget {
-    overflow: scroll;
+    overflow-y: auto;
 }
 
 .icon {
@@ -188,15 +188,61 @@ a {
     padding: 10px 0;
 }
 
+.album-tags::after {
+    border-bottom: 1px solid greenyellow;
+}
+
 .album-tags p {
     color: #717171;
 }
 
 
 .album-container {
-    display: flex;
-    
+    display: flex; 
+    padding: 30px;
+    flex-direction: column;
 }
+
+.album-content {
+    display: flex;
+    gap: 0 10px;
+}
+
+.album-box-title {
+    color: white;
+    padding-bottom: 15px;
+}
+
+.album-image img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.album-card {
+    width: 16%;
+}
+
+.album-body {
+    text-align: center;
+}
+
+.album-card h3 {
+    color: white;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+.album-card p {
+    color: #75777C;
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -268,6 +314,8 @@ a {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    width: 100%;
+    max-width: 400px;
 }
 
 .player-buttons li {
@@ -307,7 +355,8 @@ a {
     height: 5px;
     background-color: #5A5A5A;
     border-radius: 9999px;
-    width: 400px;
+    width: 100%;
+    flex-grow: 1;
 }
 
 .song-timeline .timeline:hover * {
@@ -338,6 +387,11 @@ a {
     display: none;
 }
 
+.media {
+    width: 100%;
+    max-width: 200px;
+}
+
 .media-buttons .buttons {
     display: flex;
     align-items: center;
@@ -352,7 +406,8 @@ a {
 
 .audio-bar {
     height: 5px;
-    width: 100px;
+    width: 100%;
+    flex-grow: 1;
     background-color: #5A5A5A;
     border-radius: 9999px;
 }
