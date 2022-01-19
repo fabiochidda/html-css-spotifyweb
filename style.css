@@ -13,7 +13,7 @@ body {
 
 main {
     display: flex;
-    height: 100vh;
+    height: calc(100vh - 90px);
 }
 
 .sidebar {
@@ -22,12 +22,14 @@ main {
     min-width: 250px;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 .main-container {
     border: 2px dashed blue;
     background-color: #141922;
     flex-grow: 1;
+    overflow: scroll;
 }
 
 ul li {
@@ -66,6 +68,7 @@ a {
     display: flex;
     align-items: center;
     padding: 0 10px;
+    flex-shrink: 0;
 }
 
 .logo img {
@@ -88,6 +91,10 @@ a {
 
 #second-widget li:nth-child(2) {
     padding-bottom: 15px;
+}
+
+#second-widget {
+    overflow: scroll;
 }
 
 .icon {
