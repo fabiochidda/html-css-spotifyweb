@@ -239,6 +239,11 @@ a {
     color: #75777C;
 }
 
+.round {
+    border-radius: 50%;
+    overflow: hidden;
+}
+
 
 /* Footer */
 
