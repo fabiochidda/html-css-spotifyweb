@@ -155,8 +155,6 @@ a {
 
 /* Main Container */
 
-
-
 .upgrade-bar {
     height: 90px;
     flex-basis: 100%;
@@ -196,7 +194,6 @@ a {
     color: #717171;
 }
 
-
 .album-container {
     display: flex; 
     padding: 30px;
@@ -208,9 +205,15 @@ a {
     gap: 0 10px;
 }
 
-.album-box-title {
+.album-box-title h2 {
     color: white;
     padding-bottom: 15px;
+}
+
+.album-box-title p {
+    color: #75777C;
+    font-weight: bold;
+    padding-bottom: 25px;
 }
 
 .album-image img {
@@ -235,16 +238,6 @@ a {
 .album-card p {
     color: #75777C;
 }
-
-
-
-
-
-
-
-
-
-
 
 
 /* Footer */
