@@ -7,3 +7,23 @@
         width: 23%;
     }
 }
+
+@media screen and (max-width: 639px) {
+    .album-content {
+        flex-wrap: wrap;
+    }
+    
+    .album-card {
+        width: 48%;
+    }
+}
+
+@media screen and (max-width: 552px) {
+    .album-content {
+        flex-wrap: wrap;
+    }
+    
+    .album-card {
+        width: 48%;
+    }
+}
