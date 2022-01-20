@@ -1,0 +1,9 @@
+@media screen and (max-width: 878px) {
+    .album-content {
+        flex-wrap: wrap;
+    }
+    
+    .album-card {
+        width: 23%;
+    }
+}
