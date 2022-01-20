@@ -49,8 +49,12 @@ a {
 }
 
 .sidebar-widget li {
-    margin: 0 15px;
-    margin
+    padding-left: 15px;
+}
+
+#first-widget li:first-child {
+    border-left: 3px solid #9BC651;
+    padding-left: 12px;
 }
 
 .sidebar-widget p {
@@ -127,8 +131,13 @@ a {
     padding-top: 15px;
 }
 
+#third-widget .widget-list li {
+    padding: 0;
+}
+
 #third-widget .widget-list {
     flex-grow: 1;
+    padding: 10px 15px;
 }
 
 #third-widget .widget-item:nth-child(1) {
@@ -187,12 +196,28 @@ a {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 0 25px;
-    padding: 10px 0;
+    gap: 15px 25px;
+    padding: 20px 0;
 }
 
-.album-tags::after {
-    border-bottom: 1px solid greenyellow;
+.album-tags li {
+    position: relative;
+}
+
+.album-tags li.active::after {
+    content: '';
+    display: block;
+    width: 35px;
+    height: 3px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #9BC651;
+}
+
+.album-tags li:hover p {
+    color: rgb(200, 200, 200);
 }
 
 .album-tags p {
