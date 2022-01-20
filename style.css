@@ -17,7 +17,6 @@ main {
 }
 
 .sidebar {
-    border: 2px dashed red;
     background-color: #000000;
     min-width: 250px;
     display: flex;
@@ -26,7 +25,6 @@ main {
 }
 
 .main-container {
-    border: 2px dashed blue;
     background-color: #141922;
     flex-grow: 1;
     overflow-y: auto;
@@ -57,6 +55,10 @@ a {
     padding-left: 12px;
 }
 
+#first-widget .widget-list {
+    padding-top: 0;
+}
+
 .sidebar-widget p {
     color: #6B6B6B;
     font-weight: bold;
@@ -76,12 +78,17 @@ a {
     height: 90px;
     display: flex;
     align-items: center;
-    padding: 0 10px;
+    padding: 0 15px;
     flex-shrink: 0;
 }
 
-.logo img {
+.logo img:first-child {
     width: 150px;
+}
+
+.logo-small {
+    display: none;
+    width: 30px;
 }
 
 .widget-list {
@@ -91,7 +98,7 @@ a {
 .widget-item {
     display: flex;
     align-items: center;
-    padding: 5px 0px;
+    padding: 5px 15px;
 }
 
 #second-widget .playlist-names {
@@ -308,17 +315,12 @@ a {
 /* Footer */
 
 .player-bar {
-    border: 2px dashed violet;
     background-color: #282828;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100px;
     gap: 10px;
-}
-
-.debug {
-    border: 2px dashed salmon;
 }
 
 .current-song {

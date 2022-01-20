@@ -19,11 +19,57 @@
 }
 
 @media screen and (max-width: 552px) {
+    .sidebar {
+        min-width: 60px;
+    }
+
     .album-content {
         flex-wrap: wrap;
     }
     
     .album-card {
         width: 48%;
+    }
+
+    .logo {
+        height: auto;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .logo-standard {
+        display: none;
+    }
+
+    .logo-small {
+        display: block;
+    }
+
+    #first-widget .icon-text {
+        display: none;
+    }
+
+    #second-widget {
+        display: none;
+    }
+
+    #third-widget .widget-list {
+        padding: 0;
+    }
+
+    #third-widget .widget-list li {
+        padding: 15px;
+    }
+
+    #third-widget .widget-list li:first-child {
+        border: 0;
+    }
+
+    #third-widget p {
+        display: none;
+    }
+
+    .song-description {
+        margin-right: 10px;
     }
 }
